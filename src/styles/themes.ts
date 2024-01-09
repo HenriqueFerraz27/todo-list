@@ -27,7 +27,7 @@ export const darkTheme = {
     feedback,
   },
   typography,
-}
+} as const
 
 export const lightTheme = {
   color: {
@@ -56,4 +56,4 @@ export const lightTheme = {
     feedback,
   },
   typography,
-}
+} as const

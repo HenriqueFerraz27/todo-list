@@ -6,11 +6,9 @@ export const GlobalStyle = createGlobalStyle`
   *:after {
     margin: 0;
     padding: 0;
-    color: ${({ theme }) => theme.color.basic.base.secondary};
     font-family: ${({ theme }) => theme.typography.family.Inter};
     font-size: ${({ theme }) => theme.typography.size.md};
     font-weight: ${({ theme }) => theme.typography.weight.regular};
-    line-height: ${({ theme }) => theme.typography.lineHeight.base};
     box-sizing: border-box;
     outline: 2px solid transparent;
     -webkit-font-smoothing: antialiased;
@@ -20,11 +18,8 @@ export const GlobalStyle = createGlobalStyle`
     outline: 2px solid #996DFF;
   }
 
-  ::placeholder {
-    color: ${({ theme }) => theme.color.basic.base.primary};
-  }
-
   body {
+    color: ${({ theme }) => theme.color.basic.base.secondary};
     background-color: ${({ theme }) => theme.color.basic.auxiliary.secondary};
   }
 
