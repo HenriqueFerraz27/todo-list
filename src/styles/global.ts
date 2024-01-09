@@ -1,0 +1,68 @@
+import { createGlobalStyle } from 'styled-components'
+
+export const GlobalStyle = createGlobalStyle`
+  *,
+  *:before,
+  *:after {
+    margin: 0;
+    padding: 0;
+    color: ${({ theme }) => theme.color.basic.base.secondary};
+    font-family: ${({ theme }) => theme.typography.family.Inter};
+    font-size: ${({ theme }) => theme.typography.size.md};
+    font-weight: ${({ theme }) => theme.typography.weight.regular};
+    line-height: ${({ theme }) => theme.typography.lineHeight.base};
+    box-sizing: border-box;
+    outline: 2px solid transparent;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :focus {
+    outline: 2px solid #996DFF;
+  }
+
+  ::placeholder {
+    color: ${({ theme }) => theme.color.basic.base.primary};
+  }
+
+  body {
+    background-color: ${({ theme }) => theme.color.basic.auxiliary.secondary};
+  }
+
+  @media (max-width: 1024px) {
+    html {
+      font-size: 93.75%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    html {
+      font-size: 87.5%;
+    }
+  }
+
+  ul,
+  ol {
+    list-style: none;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button,
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  strong {
+    font-weight: ${({ theme }) => theme.typography.weight.bold};
+  }
+`

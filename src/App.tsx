@@ -1,8 +1,14 @@
+import { ThemeProvider } from 'styled-components'
+import { GlobalStyle } from './styles/global'
+import { darkTheme } from './styles/themes'
+import TodoList from './pages/TodoList'
+
 function App() {
   return (
-    <>
-      <h1>Hello World - Getting Started</h1>
-    </>
+    <ThemeProvider theme={darkTheme}>
+      <TodoList />
+      <GlobalStyle />
+    </ThemeProvider>
   )
 }
 
