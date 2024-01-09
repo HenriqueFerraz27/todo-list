@@ -1,5 +1,11 @@
+import { Header } from '../../components'
+
 function TodoList() {
-  return <h1>Hello World - Getting Started</h1>
+  return (
+    <>
+      <Header />
+    </>
+  )
 }
 
 export default TodoList
