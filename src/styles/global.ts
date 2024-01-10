@@ -57,7 +57,7 @@ export const GlobalStyle = createGlobalStyle`
     cursor: pointer;
   }
 
-  strong {
+  strong, strong * {
     font-weight: ${({ theme }) => theme.typography.weight.bold};
   }
 `

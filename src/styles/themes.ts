@@ -1,4 +1,4 @@
-import { feedback, typography } from './tokens'
+import { action, typography } from './tokens'
 
 export const darkTheme = {
   color: {
@@ -24,7 +24,7 @@ export const darkTheme = {
         tertiary: '#323238',
       },
     },
-    feedback,
+    action,
   },
   typography,
 } as const
@@ -53,7 +53,7 @@ export const lightTheme = {
         tertiary: '#7C7C8A',
       },
     },
-    feedback,
+    action,
   },
   typography,
 } as const

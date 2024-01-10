@@ -1,6 +1,6 @@
-export const feedback = {
-  delete: '#AD1E12',
-}
+export const action = {
+  delete: '#E25858',
+} as const
 
 
 export const typography = {
@@ -9,6 +9,7 @@ export const typography = {
   },
   size: {
     xs: '0.75rem',
+    sm: '0.875rem',
     md: '1rem',
   },
   weight: {
@@ -18,4 +19,4 @@ export const typography = {
   lineHeight: {
     base: 1.6,
   },
-}
+} as const

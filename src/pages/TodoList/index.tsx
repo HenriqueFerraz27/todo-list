@@ -1,4 +1,4 @@
-import { Header, NewTaskForm } from '../../components'
+import { Header, NewTodoForm, Todo } from '../../components'
 import * as S from './styles'
 
 function TodoList() {
@@ -6,7 +6,8 @@ function TodoList() {
     <>
       <Header />
       <S.TodoListMain>
-        <NewTaskForm />
+        <NewTodoForm />
+        <Todo />
       </S.TodoListMain>
     </>
   )
