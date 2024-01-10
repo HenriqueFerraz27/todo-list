@@ -1,3 +1,4 @@
+import * as Icon from 'phosphor-react'
 import * as S from './styles'
 import { TodoList } from '..'
 
@@ -14,7 +15,16 @@ export const Todo = () => {
         </strong>
       </S.TodoHeader>
 
-      <TodoList />
+      <S.TaskListEmpty>
+        <Icon.ClipboardText />
+
+        <div>
+          <strong>You don't have Todo registered yet</strong>
+          <p>Create Todo and organize your to-do items</p>
+        </div>
+      </S.TaskListEmpty>
+
+      {/* <TodoList /> */}
     </S.Todo>
   )
 }

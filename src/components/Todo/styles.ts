@@ -23,3 +23,22 @@ export const TodoHeader = styled.header`
     background-color: ${({ theme }) => theme.color.basic.support.tertiary};
   }
 `
+
+export const TaskListEmpty = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: ${pxToRem(244)};
+  color: ${({ theme }) => theme.color.basic.base.tertiary};
+  text-align: center;
+  border-top: 1px solid ${({ theme }) => theme.color.basic.support.tertiary};
+  border-radius: ${pxToRem(8)};
+  line-height: ${({ theme }) => theme.typography.lineHeight.base};
+
+  svg {
+    width: ${pxToRem(56)};
+    height: ${pxToRem(56)};
+    margin-bottom: ${pxToRem(16)};
+  }
+`
