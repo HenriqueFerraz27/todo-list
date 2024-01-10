@@ -14,6 +14,14 @@ export const TodoList = () => {
     setTasks(updatedTasks)
   }
 
+  const handleDeleteTodo = (taskDeleted: number) => {
+    const tasksWithoutTheDeleted = tasks.filter(task => {
+      return task.id !== taskDeleted
+    })
+
+    setTasks(tasksWithoutTheDeleted)
+  }
+
   return (
     <S.TodoList>
       {tasks.map(task => {
@@ -28,7 +36,7 @@ export const TodoList = () => {
 
             <S.ItemContent check={task.done}>{task.content}</S.ItemContent>
 
-            <S.ItemDeleteButton>
+            <S.ItemDeleteButton onClick={() => handleDeleteTodo(task.id)}>
               <Icon.Trash />
             </S.ItemDeleteButton>
           </S.ListItem>
