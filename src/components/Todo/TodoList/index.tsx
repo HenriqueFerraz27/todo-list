@@ -1,42 +1,39 @@
 import * as Icon from 'phosphor-react'
 import * as S from './styles'
+import { useContext } from 'react'
+import { TasksContext } from '../../../contexts/TasksContext'
 
 export const TodoList = () => {
+  const { tasks, setTasks } = useContext(TasksContext)
+
+  const handleDoneTodo = (taskId: number) => {
+    const updatedTasks = tasks.map(task =>
+      task.id === taskId ? { ...task, done: !task.done } : task
+    )
+
+    setTasks(updatedTasks)
+  }
+
   return (
     <S.TodoList>
-      <S.ListItem>
-        <S.ItemChekbox>
-            <Icon.Check weight='bold' />
-        </S.ItemChekbox>
+      {tasks.map(task => {
+        return (
+          <S.ListItem key={task.id}>
+            <S.ItemChekbox
+              onClick={() => handleDoneTodo(task.id)}
+              check={task.done}
+            >
+              <Icon.Check weight='bold' />
+            </S.ItemChekbox>
 
-        <S.ItemContent>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-          maiores, repellat deleniti beatae nulla et saepe ut ipsum impedit,
-          necessitatibus adipisci molestias error porro neque? Facere nobis quae
-          voluptatem deserunt.
-        </S.ItemContent>
+            <S.ItemContent check={task.done}>{task.content}</S.ItemContent>
 
-        <S.ItemDeleteButton>
-          <Icon.Trash />
-        </S.ItemDeleteButton>
-      </S.ListItem>
-
-      <S.ListItem>
-        <S.ItemChekbox check>
-            <Icon.Check weight='bold' />
-        </S.ItemChekbox>
-
-        <S.ItemContent check>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-          maiores, repellat deleniti beatae nulla et saepe ut ipsum impedit,
-          necessitatibus adipisci molestias error porro neque? Facere nobis quae
-          voluptatem deserunt.
-        </S.ItemContent>
-
-        <S.ItemDeleteButton>
-          <Icon.Trash />
-        </S.ItemDeleteButton>
-      </S.ListItem>
+            <S.ItemDeleteButton>
+              <Icon.Trash />
+            </S.ItemDeleteButton>
+          </S.ListItem>
+        )
+      })}
     </S.TodoList>
   )
 }

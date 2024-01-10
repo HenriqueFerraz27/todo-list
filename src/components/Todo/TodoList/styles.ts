@@ -13,6 +13,7 @@ interface ListItemProps {
 
 export const ListItem = styled.li`
   display: flex;
+  justify-content: space-between;
   align-items: flex-start;
   gap: ${pxToRem(12)};
   padding: ${pxToRem(20)};
@@ -49,6 +50,7 @@ export const ItemChekbox = styled.button<ListItemProps>`
 `
 
 export const ItemContent = styled.p<ListItemProps>`
+  width: 100%;
   color: ${({ theme, check }) => check && theme.color.basic.base.tertiary};
   text-decoration: ${({ check }) => check && 'line-through'};
   line-height: ${({ theme }) => theme.typography.lineHeight.base};
