@@ -12,11 +12,11 @@ export const Todo = () => {
     <S.Todo>
       <S.TodoHeader>
         <strong>
-          Todo Created <span>{tasks.length}</span>
+          Tasks Created <span>{tasks.length}</span>
         </strong>
 
         <strong>
-          Completed{' '}
+          Completeds{' '}
           <span>
             {numberOfTasksDone} of {tasks.length}
           </span>
