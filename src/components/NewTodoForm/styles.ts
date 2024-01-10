@@ -9,7 +9,8 @@ export const NewTodoForm = styled.form`
 
   input,
   button {
-    padding: ${pxToRem(16)};
+    min-height: ${pxToRem(52)};
+    padding: 0 ${pxToRem(16)};
     border-radius: ${pxToRem(8)};
     transition: all 0.1s;
   }
@@ -36,13 +37,21 @@ export const AddNewTodoButton = styled.button`
   color: ${({ theme }) => theme.color.basic.auxiliary.tertiary};
   font-weight: ${({ theme }) => theme.typography.weight.bold};
   background-color: ${({ theme }) => theme.color.brand.primary};
+  border: 2px solid ${({ theme }) => theme.color.brand.primary};
+  transition: all 0.1s;
 
   svg {
     width: ${pxToRem(20)};
     height: ${pxToRem(20)};
   }
 
-  &:hover {
+  &:not(:disabled):hover {
+    color: ${({ theme }) => theme.color.brand.primary};
+    background-color: transparent;
+  }
+
+  &:disabled {
     background-color: ${({ theme }) => theme.color.brand.secondary};
+    cursor: not-allowed;
   }
 `
