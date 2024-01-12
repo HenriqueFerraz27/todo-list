@@ -1,11 +1,10 @@
 import * as Icon from 'phosphor-react'
 import * as S from './styles'
 import { TodoList } from '..'
-import { useContext } from 'react'
-import { TasksContext } from '../../contexts/TasksContext'
+import { useTasksContext } from '../../hooks/useTasksContext'
 
 export const Todo = () => {
-  const { tasks } = useContext(TasksContext)
+  const { tasks } = useTasksContext()
   const numberOfTasksDone = tasks.filter(task => task.done === true).length
 
   return (

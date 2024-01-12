@@ -1,10 +1,9 @@
 import * as Icon from 'phosphor-react'
 import * as S from './styles'
-import { useContext } from 'react'
-import { TasksContext } from '../../../contexts/TasksContext'
+import { useTasksContext } from '../../../hooks/useTasksContext'
 
 export const TodoList = () => {
-  const { tasks, setTasks } = useContext(TasksContext)
+  const { tasks, setTasks } = useTasksContext()
 
   const handleDoneTodo = (taskId: number) => {
     const updatedTasks = tasks.map(task =>

@@ -1,4 +1,4 @@
-import { action, typography } from './tokens'
+import { action, typography } from './index'
 
 export const darkTheme = {
   color: {
@@ -38,9 +38,9 @@ export const lightTheme = {
     },
     basic: {
       base: {
-        primary: '#E1E1E6',
-        secondary: '#C4C4CC',
-        tertiary: '#8D8D99',
+        primary: '#121214',
+        secondary: '#202024',
+        tertiary: '#29292E',
       },
       auxiliary: {
         primary: '#8D8D99',

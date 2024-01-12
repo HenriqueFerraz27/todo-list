@@ -1,10 +1,11 @@
 import * as Icon from 'phosphor-react'
 import * as S from './styles'
-import { ChangeEvent, FormEvent, useContext, useState } from 'react'
-import { Task, TasksContext } from '../../contexts/TasksContext'
+import { ChangeEvent, FormEvent, useState } from 'react'
+import { Task } from '../../@types/task'
+import { useTasksContext } from '../../hooks/useTasksContext'
 
 export const NewTodoForm = () => {
-  const { setTasks } = useContext(TasksContext)
+  const { setTasks } = useTasksContext()
   const [newTodoText, setNewTodoText] = useState<string>('')
 
   const handleNewTodoChange = (event: ChangeEvent<HTMLInputElement>) => {

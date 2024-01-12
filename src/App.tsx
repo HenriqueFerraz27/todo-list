@@ -1,7 +1,6 @@
 import { ThemeProvider } from 'styled-components'
-import { GlobalStyle } from './styles/global'
-import { darkTheme } from './styles/themes'
 import TodoList from './pages/TodoList'
+import { GlobalStyle, darkTheme } from './styles'
 
 function App() {
   return (

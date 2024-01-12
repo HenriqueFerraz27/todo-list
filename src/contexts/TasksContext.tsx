@@ -1,10 +1,10 @@
-import { ReactNode, createContext, useEffect, useState } from 'react'
-
-export interface Task {
-  id: number
-  content: string
-  done: boolean
-}
+import {
+  ReactNode,
+  createContext,
+  useEffect,
+  useState,
+} from 'react'
+import { Task } from '../@types/task'
 
 interface TasksContextData {
   tasks: Task[]
@@ -36,3 +36,5 @@ export const TasksContextProvider = ({
     </TasksContext.Provider>
   )
 }
+
+
