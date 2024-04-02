@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Coffee Delivery" src="./public/logos/coffee-delivery-horizontal.svg" width="200px" />
+  <img alt="Todo List" src="./github/todo-list-horizontal.svg" width="200px" />
 </h1>
 
 <div align="center">
@@ -17,31 +17,23 @@
 ## 📸 Project View
 
 <div align="center">
-  <img alt="Coffee Delivery - Desktop and Mobile" src="./github/coffee-delivery-desktop-mobile.png">
-  <img alt="Coffee Delivery - GIF" src="./github/coffee-delivery-gif.gif">
+  <img alt="Todo List - Desktop and Mobile" src="./github/todo-list-desktop-mobile.png">
+  <img alt="Todo List - GIF" src="./github/todo-list-gif.gif">
 </div>
 
 ## ℹ About the Project
 
 <p>
-  Coffee Delivery is a project that features the functionalities of a delivery service. Developed based on the knowledge acquired over time, this project represented a journey of learning and overcoming challenges. By using the TypeScript and ReactJS technologies, along with various complementary libraries, I was able to explore and apply advanced concepts of web development. From the architecture of the application to the implementation of interactive and usability features.
+  During some free time I had, I decided to create a to-do list application to practice my programming skills. The project was simple but meaningful to me. As I began the project, I delved into the logic behind organizing and manipulating task lists. I learned the importance of a well-defined data structure to store task information and the efficient way to access them as needed.
 </p>
 
 ## 🏗 Main Features
 
-- [x] Add Item: Allows the user to add an item to their order.
+- [x] Add a new task
 
-- [x] Increment Item: Enables the user to increase the quantity of an item in their order.
+- [x] Mark and unmark a task as completed
 
-- [x] Decrement Item: Allows the user to decrease the quantity of an item in their order.
-
-- [x] Delete Item: Allows the user to remove an item from their order.
-
-- [x] Address Form: Enables the user to input the delivery address for the order.
-
-- [x] Payment Method: Allows the user to select the payment method for the order.
-
-- [x] Complete Order: Allows the user to finalize and submit the order for processing.
+- [x] Remove a task from the listing
 
 ## ⚙️ Technologies
 
@@ -51,14 +43,14 @@
 
 ## 🧪 Test the Project - Click on the button
 
-<a href="https://coffe-delivery-eight-lyart.vercel.app/">
+<a href="https://todo-list-eight-eosin.vercel.app/">
   <img alt="Test the Project - Vercel" src="./github/vercel-button.png">
 </a>
 
 ## 🎨 Layout
 
-<a align="center" href="https://www.figma.com/file/5yT9ZzZmRQRS4yivGGB3pl/Coffee-Delivery">
-  <img alt="Layout" src="./github/coffee-delivery-cover.png">
+<a align="center" href="https://www.figma.com/file/0n0zDN7zbzhRbaEO74Xesx/ToDo-List">
+  <img alt="Layout" src="./github/todo-list-cover.jpg">
 </a>
 
 ## 💻 Repository Cloning
@@ -71,7 +63,7 @@
 2. **Clone the Repository:** Make a clone of this repository to your development environment using the following command:
 
 ```bash
-git clone https://github.com/HenriqueFerraz27/coffee-delivery.git
+git clone https://github.com/HenriqueFerraz27/todo-list.git
 ```
 
 3. **Dependency Installation:** Navigate to the project folder and install the necessary dependencies with the following command:
@@ -86,7 +78,7 @@ npm install # or yarn install
 npm run dev # or yarn dev
 ```
 
-5. **Application Access:** Open your browser and access the link provided to use Coffee Delivery.
+5. **Application Access:** Open your browser and access the link provided to use Todo List.
 
 ## 🤝 Contributions
 
